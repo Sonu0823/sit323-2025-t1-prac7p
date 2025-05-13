@@ -38,6 +38,7 @@ kubectl apply -f app-service.yaml
 ### 4. Testing the Application
 
 After deploying, we can interact with the application using powershell.
+
     1. Create a User (POST):
         " Invoke-RestMethod -Uri http://localhost:30001/users -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "Sonu", "email": "sonu@deakin.edu.au"}' "
     
